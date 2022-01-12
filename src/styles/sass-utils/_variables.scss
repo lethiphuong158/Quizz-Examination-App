@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/functions";
+
+$pink: #d63384 ;
+$pink-dark: darken($pink, 50%);
+$pink-light: lighten($pink, 6%);
+
+$primary : $pink;
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$theme-colors: map-merge($theme-colors, (
+        "primary-light": $pink-light,
+        "primary-dark": $pink-dark
+));
